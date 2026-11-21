@@ -2,14 +2,13 @@ baseURL: "https://staxss2008.github.io/staxss/"
 languageCode: "zh-cn"
 title: "staxss | 个人主页"
 theme: PaperMod
-
 publishDir: "public"
 
 params:
   env: production
   author: "staxss"
   description: "硬件折腾、技术笔记、项目记录"
-  keywords: ["硬件", "超频", "笔记"]
+  keywords: ["硬件","超频","笔记"]
 
   homeInfoParams:
     Title: "👋 Hi, I'm staxss"
@@ -24,10 +23,12 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  disableSpecial1stPost: false
+  ShowSpecialPost: false
+  disableCodeList1stPost: false
   enableDarkMode: true
   enableDefaultTheme: "auto"
-  ShowToC: true
+  ShowToc: true
+  ShowRssButtonInSectionTermList: true
 
 menu:
   main:
@@ -43,4 +44,3 @@ menu:
       name: 归档
       url: /archive/
       weight: 30
-
