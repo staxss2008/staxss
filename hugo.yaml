@@ -1,1 +1,46 @@
+baseURL: "https://staxss2008.github.io/staxss/"
+languageCode: "zh-cn"
+title: "staxss | 个人主页"
+theme: PaperMod
+
+publishDir: "public"
+
+params:
+  env: production
+  author: "staxss"
+  description: "硬件折腾、技术笔记、项目记录"
+  keywords: ["硬件", "超频", "笔记"]
+
+  homeInfoParams:
+    Title: "👋 Hi, I'm staxss"
+    Content: >
+      喜欢折腾硬件、超频、显示器DIY，记录踩坑笔记与项目。
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/staxss2008"
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  enableDarkMode: true
+  enableDefaultTheme: "auto"
+  ShowToC: true
+
+menu:
+  main:
+    - identifier: posts
+      name: 笔记
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: archive
+      name: 归档
+      url: /archive/
+      weight: 30
 
