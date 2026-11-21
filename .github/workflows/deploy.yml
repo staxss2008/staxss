@@ -10,12 +10,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 关键：云端自动下载 PaperMod 主题，不用你本地上传！
-      - name: Download PaperMod theme
+      - name: Download PaperMod theme zip
         run: |
           mkdir -p themes
           cd themes
-          git clone https://github.com/adityatelange/hugo-PaperMod.git PaperMod
+          wget -O papermod.zip https://github.com/adityatelange/hugo-PaperMod/archive/refs/heads/master.zip
+          unzip -q papermod.zip
+          mv hugo-PaperMod-master PaperMod
+          rm papermod.zip
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
