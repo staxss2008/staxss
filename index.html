@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f7f8fa;
+            color: #222;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            margin-bottom: 16px;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .links a {
+            display: inline‑block;
+            margin-right:12px;
+            color:#2563eb;
+            text-decoration:none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top:30px;
+            color:#666;
+            font-size:14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到我的主页！</h1>
-    <p>这是我的 GitHub Pages 网站。</p>
+    <div class="container">
+        <h1>👋 欢迎来到我的个人主页</h1>
+        <p>你好，我是 staxss。这里是我的个人网站。</p>
+
+        <h2>关于我</h2>
+        <p>在这里填写你的自我介绍：擅长什么、兴趣、学习方向等。</p>
+
+        <h2>我的项目</h2>
+        <ul>
+            <li>项目1 — 简单描述</li>
+            <li>项目2 — 简单描述</li>
+        </ul>
+
+        <h2>联系我</h2>
+        <div class="links">
+            <a href="https://github.com/staxss2008">GitHub</a>
+            <!-- 可以添加邮箱、博客等链接 -->
+        </div>
+
+        <footer>
+            © 2026 staxss | Powered by GitHub Pages
+        </footer>
+    </div>
 </body>
 </html>
